@@ -1,0 +1,11 @@
+name: Caller Workflow
+
+on: 
+  # can be ran manually
+  workflow_dispatch:
+
+jobs:
+
+  test:
+    # call the Reusable Workflow file
+    uses: shq1kor/atlas-github-actions/.github/workflows/test-reusable-workflow.yml@master
